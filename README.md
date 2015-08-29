@@ -12,7 +12,7 @@ libgpio non ha dipendenze se non gcc e si compila semplicemente con `make`
 Per installare la libreria dopo averla compilata eseguire `sudo make install`
 
 ### Come include
-Basta includere `libgpio/gpio.h` e, a seconda del bisogno, `libgpio/pwm.h` e `libgpio/clock.h` e compilare aggiungendo la libreria libgpio (`-lgpio`)
+Basta includere `libgpio/gpio.h` e, a seconda della necessità, `libgpio/pwm.h` e `libgpio/clock.h` e compilare aggiungendo la libreria libgpio (`-lgpio`)
 
 ### Come si usa
 Fare riferimento agli header per la documentazione  
