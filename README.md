@@ -17,5 +17,5 @@ Basta includere `libgpio/gpio.h` e, a seconda della necessità, `libgpio/pwm.h` 
 ### Come si usa
 Fare riferimento agli header per la documentazione  
 `gpio.h`: Inizializzazione della libreria e accesso ai GPIO  
-`pwm.h`: Controller PWM. L'inizializzazione dei controller richiede di inizializzare il clock PWMCLK tramite clockSetup 
+`pwm.h`: Controller PWM. L'inizializzazione dei controller richiede di inizializzare il clock PWMCLK tramite clockSetup  
 `clock.h`: General Purpose clock, PCM Audio e PWM clock
