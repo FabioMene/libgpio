@@ -8,13 +8,11 @@
 #include "gpio.h"
 #include "pwm.h"
 
-double libgpio_pwm_freq; // Frequenza operativa
-
 struct {
     int          reg_range; // registro range
     int          reg_data;  // registro dati
     unsigned int pres;      // risoluzione pulsazione
-} libgpio_pwm[2] = {  // I due canali
+} libgpio_pwm[] = {  // I due canali
     {PWM_RNG1, PWM_DAT1},
     {PWM_RNG2, PWM_DAT2}
 };

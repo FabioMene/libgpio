@@ -7,9 +7,13 @@ Questa libreria si appoggia solo sulle mappe di memoria degli indirizzi virtuali
 Non occupa nessun canale DMA, il che rallenta di poco l'accesso all'hardware ma per la maggior parte degli usi è accettabile
 
 ### Come si compila / installa
-libgpio non ha dipendenze se non gcc e si compila semplicemente con `make` 
+libgpio non ha dipendenze se non build-essential e coreutils e si compila semplicemente con `make`  
 
-Per installare la libreria dopo averla compilata eseguire `sudo make install`
+Per installare la libreria dopo averla compilata eseguire `sudo make install`  
+Per disinstallarla `sudo make uninstall`
+
+Per compilare le utilità eseguire `make utils`  
+Per installarle `sudo make utils_install`, per disinstallarle `sudo make utils_uninstall`
 
 ### Come si include
 Basta includere `libgpio/gpio.h` e, a seconda della necessità, `libgpio/pwm.h` e `libgpio/clock.h` e compilare aggiungendo la libreria libgpio (`-lgpio`)

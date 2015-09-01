@@ -9,11 +9,11 @@
     @see clockSetup
     @see clockStop
 */
-#define GPCLK0 0
-#define GPCLK1 1 // I tre GPClock
-#define GPCLK2 2
-#define PCMCLK 3 // PCM Audio
-#define PWMCLK 4 // PWM // OSC e' la sorgente consigliata
+#define CLOCK_GP0 0
+#define CLOCK_GP1 1 // I tre GPClock
+#define CLOCK_GP2 2
+#define CLOCK_PCM 3 // PCM Audio
+#define CLOCK_PWM 4 // PWM // OSC e' la sorgente consigliata
 
 /** Le possibili sorgenti del clock
     @see clockSetup
