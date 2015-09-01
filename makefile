@@ -36,5 +36,5 @@ utils_uninstall:
 	rm -rf /usr/local/bin/gpioc
 
 clean:
-    rm -rf build
-    rm -rf bin
+	rm -rf build
+	rm -rf bin
