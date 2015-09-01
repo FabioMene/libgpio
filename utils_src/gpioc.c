@@ -1,3 +1,24 @@
+/*
+    gpioc - a simple program to control Raspberry Pi's hardware, using libgpio
+    Copyright (C) 2015  Fabio Meneghetti
+
+    This file is part of libgpio
+
+    libgpio is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    libgpio is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with libgpio; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -170,7 +191,12 @@ int main(int argc, char* argv[]){
             case 'h':
                 usage(NULL);
             case 'V':
-                printf("gpioc versione %x(%d)\nlibgpio versione %x(%d)\n", GPIOC_VERSION, GPIOC_VERSION, LIBGPIO_VERSION, LIBGPIO_VERSION);
+                printf("gpioc %x.%x, libgpio %x.%x\n",
+                       "Copyright \xc2\xa9 2015 Fabio Meneghetti\n"
+                       "Licenza GPLv2+: GNU GPL versione 2 o successive <http://gnu.org/licenses/gpl.html>\n"
+                       "Questo è software libero: è possibile modificarlo e ridistribuirlo.\n"
+                       "Non c'è ALCUNA GARANZIA, nei limiti permessi dalla legge.\n"
+                       GPIOC_VERSION >> 8, GPIOC_VERSION & 0xff, LIBGPIO_VERSION >> 8, LIBGPIO_VERSION & 0xff);
                 return 0;
             default:
                 usage("Opzione '%c' sconosciuta\n", opt);
