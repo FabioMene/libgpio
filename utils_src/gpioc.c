@@ -191,11 +191,11 @@ int main(int argc, char* argv[]){
             case 'h':
                 usage(NULL);
             case 'V':
-                printf("gpioc %x.%x, libgpio %x.%x\n",
+                printf("gpioc %x.%x, libgpio %x.%x\n"
                        "Copyright \xc2\xa9 2015 Fabio Meneghetti\n"
                        "Licenza GPLv2+: GNU GPL versione 2 o successive <http://gnu.org/licenses/gpl.html>\n"
                        "Questo è software libero: è possibile modificarlo e ridistribuirlo.\n"
-                       "Non c'è ALCUNA GARANZIA, nei limiti permessi dalla legge.\n"
+                       "Non c'è ALCUNA GARANZIA, nei limiti permessi dalla legge.\n",
                        GPIOC_VERSION >> 8, GPIOC_VERSION & 0xff, LIBGPIO_VERSION >> 8, LIBGPIO_VERSION & 0xff);
                 return 0;
             default:
