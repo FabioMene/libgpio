@@ -3,8 +3,7 @@
 FLAGS  = -DLIBGPIO_EXTERN= -Wall -O3 -Iinclude
 UFLAGS = -Wall -O3 -Iinclude
 
-all:
-	rm -rf build
+all: clean
 	mkdir build
 	gcc $(FLAGS) -c src/libgpio.c -o build/libgpio.o 
 	gcc $(FLAGS) -c src/gpio.c -o build/gpio.o 
@@ -35,3 +34,7 @@ utils_install: utils_uninstall
 
 utils_uninstall:
 	rm -rf /usr/local/bin/gpioc
+
+clean:
+    rm -rf build
+    rm -rf bin
