@@ -38,3 +38,4 @@ utils_uninstall:
 clean:
 	rm -rf build
 	rm -rf bin
+	rm libgpio.a
